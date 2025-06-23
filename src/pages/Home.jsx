@@ -48,7 +48,7 @@ const Home = () => {
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
             // Ruta corregida apuntando a la carpeta 'public'
-            src="/assets/videos/hero-video.webm"
+            src="/assets/videos/Cervantes.mp4"
             autoPlay
             loop
             muted

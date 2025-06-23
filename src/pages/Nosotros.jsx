@@ -7,7 +7,7 @@ import CountUp from 'react-countup';
 import ParticlesBackground from '../components/ParticlesBackground';
 
 // 2. CORRECCIÓN IMPORTANTE: La ruta ahora apunta a la carpeta `public`
-const nosotrosImg = '/src/assets/staff.jpg';
+const nosotrosImg = '/assets/staff.jpg';
 
 // --- Variantes de Animación para un look profesional ---
 

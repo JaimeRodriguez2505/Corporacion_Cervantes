@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "nosotros": "Nosotros",
+    "servicios": "Servicios",
+    "portafolio": "Portafolio",
+    "contacto": "Contacto",
+    "cotizar": "Cotizar Evento"
+  },
+  "home": {
+    "title1": "Corporación",
+    "title2": "Cervantes",
+    "subtitle": "La excelencia técnica detrás de los espectáculos más grandes de Latinoamérica.",
+    "cta_button": "Explora Nuestro Trabajo"
+  },
+  "nosotros_page": {
+    "title": "Forjando Experiencias Inolvidables",
+    "subtitle": "Más que proveedores, somos tus socios estratégicos en la creación de eventos que marcan historia.",
+    "stat1_title": "Años de Experiencia",
+    "stat2_title": "Eventos de Gran Formato",
+    "stat3_title": "Técnicos Certificados",
+    "section_title": "Nuestra Filosofía",
+    "philosophy": "Nuestra misión es simple: ejecutar visiones ambiciosas con precisión impecable. Combinamos la tecnología más avanzada del mundo con un equipo humano apasionado y altamente cualificado. Desde la planificación inicial hasta el último aplauso, garantizamos un estándar de calidad que supera todas las expectativas."
+  },
+  "servicios_page": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones integrales de audio, video e iluminación para producciones de cualquier escala.",
+    "audio_title": "Audio Profesional",
+    "audio_desc": "Sistemas line array de marcas líderes, consolas digitales y microfonía de última generación para una claridad y potencia incomparables.",
+    "lighting_title": "Iluminación Espectacular",
+    "lighting_desc": "Diseño y operación de sistemas de iluminación robótica, efectos y control para crear atmósferas inmersivas y dinámicas.",
+    "video_title": "Pantallas LED y Video",
+    "video_desc": "Soluciones de video de alto impacto, con pantallas LED de alta resolución en configuraciones personalizadas para cualquier escenario."
+  },
+  "portafolio_page": {
+    "title": "Nuestro Trabajo",
+    "subtitle": "Cada evento es un lienzo. Nosotros aportamos la tecnología y la pasión para crear una obra maestra."
+  },
+  "evento_page": {
+    "project_description": "Descripción del Proyecto",
+    "event_gallery": "Galería del Evento",
+    "tech_sheet": "Ficha Técnica",
+    "audio": "Audio",
+    "lighting": "Iluminación",
+    "video": "Video y Pantallas LED",
+    "logistics": "Logística"
+  },
+  "contacto_page": {
+    "title": "Hablemos.",
+    "subtitle": "¿Listo para llevar tu evento al siguiente nivel? Nuestro equipo está aquí para ayudarte a planificar y ejecutar tu visión.",
+    "form_name": "Nombre completo",
+    "form_email": "Email",
+    "form_phone": "Teléfono (Opcional)",
+    "form_message": "Cuéntanos sobre tu evento...",
+    "form_send": "Enviar Mensaje",
+    "direct_contact": "Contacto Directo",
+    "office": "Oficinas"
+  }
+}

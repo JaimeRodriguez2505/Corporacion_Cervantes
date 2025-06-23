@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "nosotros": "About Us",
+    "servicios": "Services",
+    "portafolio": "Portfolio",
+    "contacto": "Contact",
+    "cotizar": "Quote Event"
+  },
+  "home": {
+    "title1": "Corporación",
+    "title2": "Cervantes",
+    "subtitle": "The technical excellence behind the biggest shows in Latin America.",
+    "cta_button": "Explore Our Work"
+  },
+  "nosotros_page": {
+    "title": "Forging Unforgettable Experiences",
+    "subtitle": "More than suppliers, we are your strategic partners in creating historic events.",
+    "stat1_title": "Years of Experience",
+    "stat2_title": "Large-Scale Events",
+    "stat3_title": "Certified Technicians",
+    "section_title": "Our Philosophy",
+    "philosophy": "Our mission is simple: to execute ambitious visions with impeccable precision. We combine the world's most advanced technology with a passionate and highly qualified team. From initial planning to the final applause, we guarantee a standard of quality that exceeds all expectations."
+  },
+  "servicios_page": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive audio, video, and lighting solutions for productions of any scale.",
+    "audio_title": "Professional Audio",
+    "audio_desc": "Leading brand line array systems, digital consoles, and state-of-the-art microphones for unparalleled clarity and power.",
+    "lighting_title": "Spectacular Lighting",
+    "lighting_desc": "Design and operation of robotic lighting systems, effects, and control to create immersive and dynamic atmospheres.",
+    "video_title": "LED Screens & Video",
+    "video_desc": "High-impact video solutions, with high-resolution LED screens in custom configurations for any stage."
+  },
+  "portafolio_page": {
+    "title": "Our Work",
+    "subtitle": "Every event is a canvas. We provide the technology and passion to create a masterpiece."
+  },
+  "evento_page": {
+    "project_description": "Project Description",
+    "event_gallery": "Event Gallery",
+    "tech_sheet": "Tech Sheet",
+    "audio": "Audio",
+    "lighting": "Lighting",
+    "video": "Video & LED Screens",
+    "logistics": "Logistics"
+  },
+  "contacto_page": {
+    "title": "Let's Talk.",
+    "subtitle": "Ready to take your event to the next level? Our team is here to help you plan and execute your vision.",
+    "form_name": "Full name",
+    "form_email": "Email",
+    "form_phone": "Phone (Optional)",
+    "form_message": "Tell us about your event...",
+    "form_send": "Send Message",
+    "direct_contact": "Direct Contact",
+    "office": "Offices"
+  }
+}

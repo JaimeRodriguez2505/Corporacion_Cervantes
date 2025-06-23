@@ -1,8 +1,8 @@
 // En un proyecto real, estas imágenes deben existir en tu carpeta assets.
 // Para este ejemplo, mantendré placeholders. Reemplázalos con tus fotos.
-const romeoSantosCover = '/public/assets/artistas/escenarios/romeo5.jpeg';
-const yatraCover = '/public/assets/artistas/escenarios/yatra/yatra2.png';
-const maderoCover = '/public/assets/artistas/escenarios/jose/jose.png';
+const romeoSantosCover = '/assets/artistas/escenarios/romeo5.jpeg';
+const yatraCover = '/assets/artistas/escenarios/yatra/yatra2.png';
+const maderoCover = '/assets/artistas/escenarios/jose/jose.png';
 
 export const eventosDB = [
   {

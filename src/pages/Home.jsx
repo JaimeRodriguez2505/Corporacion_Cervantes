@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import AnimatedPage from '../components/AnimatedPage';
 import { FaArrowRight } from 'react-icons/fa6';
+import WelcomeBanner from '../components/WelcomeBanner';
 
 // --- Variantes para la animación letra por letra ---
 const sentenceVariants = {
@@ -28,6 +29,13 @@ const letterVariants = {
 const Home = () => {
   const { t } = useTranslation();
   
+  // Estado para el banner y para el video
+  const [showBanner, setShowBanner] = useState(true);
+  const [videoCanPlay, setVideoCanPlay] = useState(false);
+
+  // Referencia al elemento <video> del DOM
+  const videoRef = useRef(null);
+  
   // Lógica para el texto rotativo
   const keywords = ["Audio Profesional", "Diseño de Iluminación", "Pantallas LED Gigantes", "Producción Técnica Integral"];
   const [keywordIndex, setKeywordIndex] = useState(0);
@@ -40,18 +48,33 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Efecto que reproduce el video cuando el estado 'videoCanPlay' cambia a true
+  useEffect(() => {
+    if (videoCanPlay && videoRef.current) {
+      // Usamos una promesa para asegurarnos de que no haya errores si el video ya está sonando
+      videoRef.current.play().catch(error => {
+        console.log("El video no pudo reproducirse automáticamente:", error);
+      });
+    }
+  }, [videoCanPlay]);
+
   const title = "Corporación Cervantes";
+
+  // Función que se ejecuta al hacer clic en "Aceptar" en el banner
+  const handleAccept = () => {
+    setShowBanner(false);
+    setVideoCanPlay(true);
+  };
 
   return (
     <AnimatedPage>
       <section className="relative h-screen flex flex-col items-center justify-center text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
-            // Ruta corregida apuntando a la carpeta 'public'
-            src="/assets/videos/Cervantes.mp4"
-            autoPlay
+            ref={videoRef} // Conectamos la referencia al elemento
+            src="/assets/videos/Cervantes.mp4" // Ruta al video en la carpeta 'public'
             loop
-            muted
+            muted // Muted es clave para que los navegadores permitan la reproducción
             playsInline
             className="w-full h-full object-cover"
           />
@@ -59,7 +82,6 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 text-center px-4 flex flex-col items-center">
-          {/* Título animado letra por letra */}
           <motion.h1
             variants={sentenceVariants}
             initial="hidden"
@@ -68,12 +90,11 @@ const Home = () => {
           >
             {title.split("").map((char, index) => (
               <motion.span key={char + "-" + index} variants={letterVariants}>
-                {char}
+                {char === " " ? "\u00A0" : char}
               </motion.span>
             ))}
           </motion.h1>
           
-          {/* Subtítulo con texto rotativo */}
           <div className="text-lg md:text-2xl max-w-3xl mx-auto font-light text-gray-300 h-16 flex items-center justify-center">
             <p className="mr-3">Potenciamos los espectáculos más grandes con:</p>
             <AnimatePresence mode="wait">
@@ -108,7 +129,6 @@ const Home = () => {
             </Link>
           </motion.div>
 
-          {/* Prueba Social (Social Proof) */}
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -118,6 +138,10 @@ const Home = () => {
             La productora de confianza para artistas como <span className="font-semibold text-gray-300">Romeo Santos, Sebastián Yatra</span> y <span className="font-semibold text-gray-300">José Madero.</span>
           </motion.p>
         </div>
+
+        <AnimatePresence>
+          {showBanner && <WelcomeBanner onAccept={handleAccept} />}
+        </AnimatePresence>
       </section>
     </AnimatedPage>
   );

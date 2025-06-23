@@ -72,7 +72,7 @@ const Home = () => {
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
             ref={videoRef} // Conectamos la referencia al elemento
-            src="/assets/videos/Cervantes.mp4" // Ruta al video en la carpeta 'public'
+            src="https://res.cloudinary.com/ddqtaorwz/video/upload/v1750712042/Cervantes_s1gxam.mp4" // Ruta al video en la carpeta 'public'
             loop
             muted // Muted es clave para que los navegadores permitan la reproducción
             playsInline

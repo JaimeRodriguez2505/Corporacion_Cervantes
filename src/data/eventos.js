@@ -36,10 +36,10 @@ export const eventosDB = [
       }
     },
     galeria: [
-        '/public/assets/artistas/escenarios/romeo1.jpg',
-        '/public/assets/artistas/escenarios/romeo2.png',
-        '/public/assets/artistas/escenarios/romeo3.jpg',
-        '/public/assets/artistas/escenarios/romeo4.webp',
+        '/assets/artistas/escenarios/romeo1.jpg',
+        '/assets/artistas/escenarios/romeo2.png',
+        '/assets/artistas/escenarios/romeo3.jpg',
+        '/assets/artistas/escenarios/romeo4.webp',
     ]
   },
   {
@@ -72,7 +72,7 @@ export const eventosDB = [
         en: "Coordination of 8 trucks and a team of 50 people for setup and operation."
       }
     },
-    galeria: ['/public/assets/artistas/escenarios/yatra/yatra1.png', '/public/assets/gallery/yatra2.jpg']
+    galeria: ['/assets/artistas/escenarios/yatra/yatra1.png', '/assets/gallery/yatra2.jpg']
   },
   {
     id: 'jose-madero-gira-final',
@@ -104,7 +104,7 @@ export const eventosDB = [
         en: 'Optimized team for fast and efficient setup in a busy venue.'
       }
     },
-    galeria: ['/public/assets/artistas/escenarios/jose/jose2.png',
-              '/public/assets/artistas/escenarios/jose/jose3.png']
+    galeria: ['/assets/artistas/escenarios/jose/jose2.png',
+              '/assets/artistas/escenarios/jose/jose3.png']
   }
 ];
